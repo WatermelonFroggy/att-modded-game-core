@@ -4,6 +4,8 @@ using Alta;
 using Alta.Chunks;
 using Alta.Intelligence;
 using System.IO;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [assembly: MelonInfo(typeof(att_modded_game_core.AMGC), "att-modded-game-core", "1.0.0", "WatermelonFrogy", null)]
 [assembly: MelonGame("Alta", "A Township Tale")]
@@ -16,21 +18,15 @@ namespace att_modded_game_core
 {
     public class AMGC : MelonPlugin
     {
-        private static KeyCode sirQuacksKey;
-        private static bool summoned;
+        private static bool summoned = false;
 
         private Vector3 prefabSpawnPos => VRPlayerController.Current.Head.transform.position;  // Updated for automatic access
         private AssetBundle assetBundle;
 
-        public override void OnEarlyInitializeMelon()
-        {
-            sirQuacksKey = KeyCode.Space;
-        }
-
         public override void OnInitializeMelon()
         {
             // Load the AssetBundle from the specific path where "SirQuacks" prefab is located
-            string assetBundlePath = Path.Combine(Application.persistentDataPath, "Assets", "sirquackscustomitemtest");
+            string assetBundlePath = Path.Combine(Application.persistentDataPath, "Mod Plugin Resources/SirQuacks", "sirquackscustomitemtest");
             if (File.Exists(assetBundlePath))
             {
                 assetBundle = AssetBundle.LoadFromFile(assetBundlePath);
@@ -47,9 +43,11 @@ namespace att_modded_game_core
         public override void OnLateUpdate()
         {
             // Summon Sir Quacks when the key is pressed
-            if (Input.GetKeyDown(sirQuacksKey))
+            if (!summoned && Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 SummonSirQuacks();
+
+                summoned = true;
             }
         }
 
@@ -59,7 +57,7 @@ namespace att_modded_game_core
             {
                 LoggerInstance.Msg("Summoning Sir Quacks :D");
 
-                summoned = true;
+                summoned = false;
 
                 // Load the SirQuacks prefab from the asset bundle
                 GameObject sirQuacksPrefab = assetBundle.LoadAsset<GameObject>("SirQuacks0927549863/SirQuacks");

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("att_modded_game_core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+063fb8ec2accc4e1216a3fcaea6927d94bc47a96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a57fe72fc36739dbc824a89ac50c05682db53769")]
 [assembly: System.Reflection.AssemblyProductAttribute("att_modded_game_core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("att_modded_game_core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

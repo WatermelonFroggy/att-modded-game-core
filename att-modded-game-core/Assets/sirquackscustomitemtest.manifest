@@ -1,0 +1,60 @@
+ManifestFileVersion: 0
+CRC: 925218970
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2467aa46f9158496f3a9705e388e8de3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c9f713cb2dcf7d5a19bd3f1064929d4d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 431549840, guid: b8dee3911f630894a5b604042250df7b, type: 3}
+- Class: 114
+  Script: {fileID: 823872043, guid: b8dee3911f630894a5b604042250df7b, type: 3}
+- Class: 114
+  Script: {fileID: -1581314040, guid: b8dee3911f630894a5b604042250df7b, type: 3}
+- Class: 114
+  Script: {fileID: -910170822, guid: b8dee3911f630894a5b604042250df7b, type: 3}
+- Class: 114
+  Script: {fileID: 15736714, guid: b8dee3911f630894a5b604042250df7b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bfbe35b8202b5304c86cec185f030876, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks/SirQuacks/SirQuacksQuack.mp3
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks/SirQuacks/lambert1_metallic.jpg
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks/SirQuacks/lambert1.mat
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks/SirQuacks/lambert1_albedo.jpg
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks.prefab
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks/SirQuacks/lambert1_roughness.jpg
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks/SirQuacks/lambert1_normal.png
+- Assets/Modded Items/SirQuacks0927549863/SirQuacks/SirQuacks/model.obj
+Dependencies: []
